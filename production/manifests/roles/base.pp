@@ -5,4 +5,8 @@ class site::roles::base {
     require => Anchor['::site::roles::base'],
   }
 
+  file { "/scripts":
+    ensure => "directory",
+  }
+
 }
