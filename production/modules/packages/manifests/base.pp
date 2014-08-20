@@ -10,7 +10,7 @@
 #
 # To include these packages please add base role:
 #
-# class { '::site::roles::base': }
+# class { '::roles::base': }
 #
 # === Authors
 #
