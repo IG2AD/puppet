@@ -1,5 +1,5 @@
 node 'puppet.ig2ad.com' {
-class { '::site::roles::base': }
+class { '::roles::base': }
 
 file { 'puppet_repo_pull':
   require => File[ [ "/scripts" ] ],

@@ -1,3 +1,3 @@
 node 'jenkins.ig2ad.com' {
-class { '::site::roles::base': }
+class { '::roles::base': }
 }
