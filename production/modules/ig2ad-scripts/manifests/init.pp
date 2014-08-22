@@ -26,6 +26,17 @@
 #
 # Public Domain
 #
+
+#define fuction to add all scripts listed
+define add {
+  file { "/scripts/${title}":
+    ensure => file,
+    mode   => '0755',
+    source => "puppet:///modules/scripts/${title}"
+  }
+}
+
+#main class
 class scripts ( $files = ['README'] ){
 
   # make sure root dir is there
@@ -34,15 +45,6 @@ class scripts ( $files = ['README'] ){
     owner  => 'root',
     group  => 'root',
     mode   => '0777',
-  }
-
-  #define fuction to add all scripts listed
-  define add {
-    file { "/scripts/${title}":
-      ensure => file,
-      mode   => '0755',
-      source => "puppet:///modules/scripts/${title}"
-    }
   }
 
   #add listed files
