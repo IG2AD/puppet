@@ -40,14 +40,14 @@ class scripts ( $files = ['README'] ){
   define add {
     file { "/scripts/${title}":
       ensure => file,
-      mode => 0755,
+      mode   => '0755',
       source => "puppet:///modules/scripts/${title}"
     }
   }
-  
+
   #add listed files
   #if empty($files) == 'false' {
-    add $files 
+    add $files
   #}
 
 }
