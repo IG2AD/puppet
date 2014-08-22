@@ -1,0 +1,11 @@
+name    'ig2ad-scripts'
+version '0.0.1'
+source 'https://review.ig2ad.com/#/admin/projects/IG2AD/puppet'
+author 'ig2ad'
+license 'Apache License, Version 2.0'
+summary 'Scripts module'
+description 'This module will handle all of the scripts for all of the servers'
+project_page 'https://support.ig2ad.com/projects/ig2ag'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'
